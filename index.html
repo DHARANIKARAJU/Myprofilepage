@@ -1,239 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Profile</title>
+    <title>DHARANIKA R - Profile</title>
     <style>
-        html{
-    background-color: gainsboro;
-}
-ul{
-    list-style-type: none;
-    overflow:hidden;
-}
-.name{
-    color:red;
-    float: left;
-    font-size: 25px;
-}
-.two{
-    display:flex;
-    justify-content:flex-end;
-}
-li a{
-    display:flex;
-    color:black;
-    justify-content:space-between;
-    text-align:right;
-    padding: 10px 15px;
-    text-decoration:none;
-}
-.str{
-    background-color:black;
-    padding:25px;
-    color: white;
-}
-#strike{
-    text-align: center;
-    padding-left: 82px;
-}
-#center{
-    text-align: center;
-}
-#nm{
-    position: relative;
-    left: 25%;
-    bottom: 30px;
-}
-.xyz{
-    display: flex;
-    position: relative;
-    left: 25%;
-    width: 75%;
-    bottom: 30px;
-}
-.achieve{
-    padding: 2px;
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding-bottom: 100px;
-    height: 300px;
-}
-.achieve1{
-    padding: 2px;
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding-bottom: 100px;
-    height: 300px;
-}
-.box1{
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    width: 300px;
-    height: 250px;
-    position: relative;
-    left: 5%;
-}
-.box2{
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    width: 300px;
-    height: 250px;
-    position: relative;
-    left: 40%;
-    bottom: 250px;
-}
-.box3{
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    width: 300px;
-    height: 250px;
-    position: relative;
-    left: 75%;
-    bottom: 500px;
-}
-.header{
-    text-align: center;
-}
-img{
-    width: 100px;
-    height: 100px;
-}
-.lskills{
-    position: relative;
-    left: 70%;
-    bottom: 230px;
-}
-.tskills{
-    position: relative;
-    left: 10%;
-    top: 20px;
-}
-.ab{
-    height: 300px;
-}
-.bl{
-    background-color: black;
-    color: white;   
-}
-.con{
-    position: relative;
-    left: 35%;
-}
-.bl h3{
-    text-align: center;
-}
-.i1{
-    width: 30%;
-    position: relative;
-    bottom: 1%;
-}
-.i2{
-    width: 30%;
-    position: relative;
-    bottom: 1%;
-}
-.i3{
-    width: 30%;
-    position: relative;
-    bottom: 1%;
-}
-button{
-    width: 30%;
-}
-    </style> 
-    
+        html {
+            background-color: gainsboro;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0;
+        }
+        .name {
+            color: red;
+            float: left;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .two {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        section {
+            padding: 30px;
+        }
+        .box {
+            background-color: white;
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .skills, .lang-skills {
+            width: 45%;
+        }
+        .skills-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        progress {
+            width: 100%;
+            height: 10px;
+        }
+        .contact {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .contact input, button {
+            width: 60%;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact button {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .flex-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .skills, .lang-skills {
+                width: 100%;
+            }
+            .flex-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <ul class="top">
-        <li class="name"><b>Name</b></li>
-            <ul class="two">
-                <li><a href="#hm">Home</a></li>
-                <li><a href="#nm">About me</a></li>
-                <li><a href="#ac">Achievements</a></li>
-                <li><a href="#sk">Skills</a></li>
-                <li><a href="#co">Contact</a></li>
-            </ul>
+    <ul>
+        <li class="name">DHARANIKA R</li>
+        <ul class="two">
+            <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#intern">Internship</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </ul>
-    <section id="hm" class="str">
-        <h2 id="strike"><del>Practise Makes Perfect</del></h2>
-        <h2 id="center">Perfect Practise Makes Perfect</h2>
-    </section>
-    <section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 id="nm">Name</h2>
-        <p class="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laborum nesciunt. Quia culpa, ipsam autem iste totam quidem blanditiis, earum quasi ut ipsum saepe. Cum error accusamus iure explicabo laboriosam?</p>
+
+    <section id="about">
+        <h2 style="background-color: #333; color: white; padding: 10px;">About Me</h2>
+        <p>An IT student with a passion for coding and software development. With a keen interest in technology and innovation, I am driven to continuously learn and expand my skills in programming and problem solving. I am excited to apply my knowledge and skills to real-world projects and contribute to the tech community.</p>
     </section>
 
-    <section id="ac" class="achieve">
-        <h2>Achievements</h2>
-        <h5>Some of best projects so far</h5>
-        <hr width="40%" color="white">
-        <section class="box1">
-            <img src="https://icon-library.com/images/html-code-icon/html-code-icon-4.jpg" alt="">
-            <h3 class="head">School Cricket Team Captain</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laborum nesciunt.</p>
-        </section>
-            <section class="box2">
-                <img src="https://icon-library.com/images/html-code-icon/html-code-icon-4.jpg" alt="">
-                <h3 class="head">School First</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laborum nesciunt.</p>
-            </section>
-                <section class="box3">
-                    <img src="https://icon-library.com/images/html-code-icon/html-code-icon-4.jpg" alt="">
-                    <h3 class="head">Youtube</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laborum nesciunt.</p>
-                </section>
-            </section>
-               
-    <h2 id="sk" align="center">Skills</h2>
-    <section class="ab">
-        <section class="tskills">
-        <h3 id="ts">TECHNICAL SKILLS</h3>
-            <ul>
-                <li>HTML</li>
-                <progress max="100" value="80" class="pro" ></progress>
-                <li>CSS</li>
-                <progress max="100" value="70" class="pro" ></progress>
-                <li>Javascript</li>
-                <progress max="100" value="60" class="pro" ></progress>
-                <li>C++</li>
-                <progress max="100" value="90" class="pro" ></progress>
-                <li>Java</li>
-                <progress max="100" value="80" class="pro" ></progress>
-            </ul>
-        </section>
-        <section class="lskills">
-        <h3 id="ts">LANGUAGE SKILLS</h3>
-            <ul>
-                <li>English</li>
-                <progress max="100" value="80" class="pro" ></progress>
-                <li>Tamil</li>
-                <progress max="100" value="90" class="pro" ></progress>
-                <li>Hindi</li>
-                <progress max="100" value="60" class="pro" ></progress>
-                <li>Telugu</li>
-                <progress max="100" value="40" class="pro" ></progress>
-                <li>Malayalam</li>
-                <progress max="100" value="30" class="pro" ></progress>
-            </ul>
-        </section>
+    <section id="edu">
+        <h2 style="background-color: #333; color: white; padding: 10px;">Education</h2>
+        <ul>
+            <li><b>Bachelor of Information Technology</b><br>Sri Krishna College of Engineering and Technology, Coimbatore<br>CGPA: 8.46 (2022 - Present)</li><br>
+            <li><b>HSC</b><br>SKV Matriculation Higher Secondary School, Namakkal<br>Percentage: 96.17% (2021 - 2022)</li><br>
+            <li><b>SSLC</b><br>SKV Matriculation Higher Secondary School, Namakkal<br>Percentage: 91.8% (2019 - 2020)</li>
+        </ul>
     </section>
-    <section id="co" class="bl">
-        <h3>Contact</h3>
-        <section class="con">
-            <input type="name" placeholder="ENTER YOUR NAME" class="i1"><br><br>
-            <input type="email" placeholder="ENTER YOUR EMAIL" class="i2"><br><br>
-            <input type="name" placeholder="ENTER YOUR MESSAGE" class="i3"><br><br>
-            <button>SEND MESSAGE</button>
-        </section>
+
+    <section id="skills">
+        <h2 style="background-color: #333; color: white; padding: 10px;">Skills</h2>
+        <div class="skills-section">
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                Java<br><progress max="100" value="80"></progress><br>
+                Python<br><progress max="100" value="75"></progress><br>
+                C++<br><progress max="100" value="75"></progress><br>
+                SpringBoot REST<br><progress max="100" value="30"></progress><br>
+                AWS<br><progress max="100" value="30"></progress><br>
+                Kotlin<br><progress max="100" value="25"></progress><br>
+                React Js<br><progress max="100" value="50"></progress><br>
+                MySQL<br><progress max="100" value="80"></progress><br>
+                Selenium<br><progress max="100" value="30"></progress>
+            </div>
+            <div class="lang-skills">
+                <h3>Language Skills</h3>
+                Tamil<br><progress max="100" value="100"></progress><br>
+                English<br><progress max="100" value="70"></progress><br>
+                Hindi<br><progress max="100" value="20"></progress><br>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+      <h2 style="background-color: #333; color: white; padding: 10px;">Project</h2>
+        <div id="project">
+            <h3>Online Sports Emporium</h3>
+            <ul style="text-align: left; list-style-type: disc;">
+                <li>Built a responsive and intuitive frontend using <strong>React JS</strong> and <strong>Material UI</strong>, improving user engagement by <strong>85%</strong>.</li><br>
+                <li>Implemented a scalable backend using <strong>Spring Boot</strong> and <strong>MySQL</strong>.</li><br>
+                <li>Integrated <strong>authentication</strong>, <strong>catalog</strong>, <strong>shopping cart</strong>, reducing cart abandonment by <strong>60%</strong>.</li><br>
+                <li>Designed REST APIs for seamless frontend-backend communication.</li>
+            </ul>
+        </div>
+    </section>
+    <section id=intern>
+      <h2 style="background-color: #333; color: white; padding: 10px;">Internship</h2>
+        <div id="intern">
+            <h3>Amazon - Support Engineer (08/07/2024 - 31/08/2024)</h3>
+            <ul style="text-align: left; list-style-type: disc;">
+                <li>Led migration and support for 3 tools, improving performance by 90%.</li>
+                <li>Resolved pipeline issues, reduced manual effort by 70%.</li>
+                <li>Automated workflows using Python Flask, boosting efficiency.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section >
+        <h2 style="background-color: #333; color: white; padding: 10px;">Certifications</h2>
+        <ul>
+            <li>Coding Ninjas - Basics of C++</li>
+            <li>Infosys Springboard - Java for Beginners</li>
+            <li>IIT Bombay & Spoken Tutorial - Python Training</li>
+            <li>HackerRank - SQL Intermediate</li>
+            <li>Infosys Springboard - React JS</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: dharanika2684@gmail.com</p>
+        <p>Location: Namakkal, India</p>
+        <p><a href="https://linkedin.com/in/dharanika-r-14ba93258" target="_blank" style="color:white;">LinkedIn</a> | 
+           <a href="https://github.com/DHARANIKARAJU" target="_blank" style="color:white;">GitHub</a> | 
+           <a href="https://leetcode.com/u/DHARANIKA_R/" target="_blank" style="color:white;">LeetCode</a></p>
+        <input type="text" placeholder="ENTER YOUR NAME"><br>
+        <input type="email" placeholder="ENTER YOUR EMAIL"><br>
+        <input type="text" placeholder="ENTER YOUR MESSAGE"><br>
+        <button>SEND MESSAGE</button>
     </section>
 </body>
 </html>
